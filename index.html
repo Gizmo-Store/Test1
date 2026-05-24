@@ -89,64 +89,129 @@
     </div>
     
     <div class="brand-tabs-container">
-      <div class="brand-tab active" onclick="filterBrand('all', this)">ALL</div>
-      <div class="brand-tab" onclick="filterBrand('alpaka', this)">ALPAKA</div>
-      <div class="brand-tab" onclick="filterBrand('pgytech', this)">PGYTECH</div>
-      <div class="brand-tab" onclick="filterBrand('anker', this)">ANKER</div>
-      <div class="brand-tab" onclick="filterBrand('nitecore', this)">NITECORE</div>
-      <div class="brand-tab" onclick="filterBrand('olight', this)">OLIGHT</div>
-      <div class="brand-tab" onclick="filterBrand('whoop', this)">WHOOP</div>
-      <div class="brand-tab" onclick="filterBrand('osmo', this)">OSMO</div>
+      <div class="brand-tab active" onclick="filterBrand('all', this)">All</div>
+      <div class="brand-tab" onclick="filterBrand('accessories', this)">Accessories & Gadgets</div>
+      <div class="brand-tab" onclick="filterBrand('home', this)">Home Appliances</div>
     </div>
     
     <div class="products-container" id="productGrid">
       <div id="no-results">🔍 ပစ္စည်းရှာမတွေ့ပါဗျာ။ အခြားအမည်ဖြင့် ပြန်ရှာကြည့်ပါ။</div>
       
-      <div class="product-card visible" data-brand="alpaka" data-title="Metro Sling V2" data-price="185,000 MMK" data-desc="Alpaka V2 sling bag, compact, water-resistant.">
+      <div class="product-card visible" data-brand="accessories" data-title="Metro Sling V2" data-price="185,000 MMK" data-desc="Alpaka V2 sling bag, compact, water-resistant.">
         <img src="https://i.ibb.co/rR0C5KzL/IMG-1541.jpg" class="product-img" alt="Metro Sling V2" onclick="showImage(this.src)">
         <h4>Metro Sling V2</h4><p>185,000 MMK</p>
         <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
         <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
       </div>
       
-      <div class="product-card visible" data-brand="pgytech" data-title="Camera Backpack 25L" data-price="450,000 MMK" data-desc="Professional camera backpack for photographers.">
+      <div class="product-card visible" data-brand="accessories" data-title="Camera Backpack 25L" data-price="450,000 MMK" data-desc="Professional camera backpack for photographers.">
         <img src="https://i.ibb.co/XZh9DvBH/IMG-1539.jpg" class="product-img" alt="Camera Backpack 25L" onclick="showImage(this.src)">
         <h4>Camera Backpack 25L</h4><p>450,000 MMK</p>
         <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
         <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
       </div>
       
-      <div class="product-card visible" data-brand="anker" data-title="Anker Prime Power Bank" data-price="95,000 MMK" data-desc="High speed charging power bank by Anker.">
+      <div class="product-card visible" data-brand="accessories" data-title="Anker Prime Power Bank" data-price="95,000 MMK" data-desc="High speed charging power bank by Anker.">
         <img src="https://i.ibb.co/vvHWjPMz/IMG-1542.jpg" class="product-img" alt="Anker Prime Power Bank" onclick="showImage(this.src)">
         <h4>Anker Prime Power Bank</h4><p>95,000 MMK</p>
         <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
         <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
       </div>
       
-      <div class="product-card visible" data-brand="nitecore" data-title="EDC37 Flashlight" data-price="500,000 MMK" data-desc="Extremely bright tactical flashlight.">
+<div class="product-card visible" data-brand="accessories" data-title="Dyson" data-price="9,000 MMK" data-desc="Air fresher.">
+        <img src="https://i.ibb.co/vvHWjPMz/IMG-1542.jpg" class="product-img" alt="Dyson" onclick="showImage(this.src)">
+        <h4>Dyson</h4><p>9,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+      <div class="product-card visible" data-brand="accessories" data-title="EDC37 Flashlight" data-price="500,000 MMK" data-desc="Extremely bright tactical flashlight.">
         <img src="https://i.ibb.co/4n3qZ4KZ/IMG-1544.jpg" class="product-img" alt="EDC37 Flashlight" onclick="showImage(this.src)">
         <h4>EDC37 Flashlight</h4><p>500,000 MMK</p>
         <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
         <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
       </div>
-      
-      <div class="product-card visible" data-brand="whoop" data-title="WHOOP Life" data-price="2,550,000 MMK" data-desc="Health and fitness wearable tracker.">
+
+<div class="product-card visible" data-brand="accessories" data-title="AO" data-price="40,000 MMK" data-desc="Player Bottle.">
+        <img src="https://i.ibb.co/vvHWjPMz/IMG-1542.jpg" class="product-img" alt="AO" onclick="showImage(this.src)">
+        <h4>AO</h4><p>40,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+<div class="product-card visible" data-brand="accessories" data-title="Aukey" data-price="65,000 MMK" data-desc="High speed charging cable.">
+        <img src="https://i.ibb.co/vvHWjPMz/IMG-1542.jpg" class="product-img" alt="Auket" onclick="showImage(this.src)">
+        <h4>Aukey</h4><p>65,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+      <div class="product-card visible" data-brand="accessories" data-title="Omron" data-price="920,000 MMK" data-desc="Measure Blood Pressure.">
+        <img src="https://i.ibb.co/4n3qZ4KZ/IMG-1544.jpg" class="product-img" alt="Omron" onclick="showImage(this.src)">
+        <h4>Omron</h4><p>920,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+      <div class="product-card visible" data-brand="accessories" data-title="WHOOP Life" data-price="2,550,000 MMK" data-desc="Health and fitness wearable tracker.">
         <img src="https://i.ibb.co/qL5K9snf/IMG-1540.jpg" class="product-img" alt="WHOOP Life" onclick="showImage(this.src)">
         <h4>WHOOP Life</h4><p>2,550,000 MMK</p>
         <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
         <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
       </div>
       
-      <div class="product-card visible" data-brand="olight" data-title="Olight" data-price="550,000 MMK" data-desc="Premium Olight illumination tool.">
-        <img src="https://i.ibb.co/W4DN2J08/image.jpg" class="product-img" alt="Olight" onclick="showImage(this.src)">
-        <h4>Olight</h4><p>550,000 MMK</p>
+      <div class="product-card visible" data-brand="home" data-title="Osmo pocket 3" data-price="657,000 MMK" data-desc="Pocket-sized vlogging camera with gimbal.">
+        <img src="https://i.ibb.co/mVQjg7kz/Untitled-5.jpg" class="product-img" alt="Osmo pocket 3" onclick="showImage(this.src)">
+        <h4>Osmo pocket 3</h4><p>657,000 MMK</p>
         <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
         <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
       </div>
-      
-      <div class="product-card visible" data-brand="osmo" data-title="Osmo pocket 3" data-price="657,000 MMK" data-desc="Pocket-sized vlogging camera with gimbal.">
+
+<div class="product-card visible" data-brand="home" data-title="Insta360" data-price="657,000 MMK" data-desc="Pocket-sized vlogging camera.">
+        <img src="https://i.ibb.co/mVQjg7kz/Untitled-5.jpg" class="product-img" alt="Insta360" onclick="showImage(this.src)">
+        <h4>Insta360</h4><p>657,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+<div class="product-card visible" data-brand="home" data-title="POLAR" data-price="657,000 MMK" data-desc="Pocket-sized vlogging camera with gimbal.">
+        <img src="https://i.ibb.co/mVQjg7kz/Untitled-5.jpg" class="product-img" alt="POLAR" onclick="showImage(this.src)">
+        <h4>POLAR</h4><p>657,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+<div class="product-card visible" data-brand="home" data-title="Osmo pocket 3" data-price="657,000 MMK" data-desc="Pocket-sized vlogging camera with gimbal.">
         <img src="https://i.ibb.co/mVQjg7kz/Untitled-5.jpg" class="product-img" alt="Osmo pocket 3" onclick="showImage(this.src)">
         <h4>Osmo pocket 3</h4><p>657,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+<div class="product-card visible" data-brand="home" data-title="Osmo pocket 3" data-price="657,000 MMK" data-desc="Pocket-sized vlogging camera with gimbal.">
+        <img src="https://i.ibb.co/mVQjg7kz/Untitled-5.jpg" class="product-img" alt="Osmo pocket 3" onclick="showImage(this.src)">
+        <h4>Osmo pocket 3</h4><p>657,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+<div class="product-card visible" data-brand="home" data-title="Osmo pocket 3" data-price="657,000 MMK" data-desc="Pocket-sized vlogging camera with gimbal.">
+        <img src="https://i.ibb.co/mVQjg7kz/Untitled-5.jpg" class="product-img" alt="Osmo pocket 3" onclick="showImage(this.src)">
+        <h4>Osmo pocket 3</h4><p>657,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+<div class="product-card visible" data-brand="home" data-title="Osmo pocket 3" data-price="657,000 MMK" data-desc="Pocket-sized vlogging camera with gimbal.">
+        <img src="https://i.ibb.co/mVQjg7kz/Untitled-5.jpg" class="product-img" alt="Osmo pocket 3" onclick="showImage(this.src)">
+        <h4>Osmo pocket 3</h4><p>657,000 MMK</p>
+        <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
+        <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
+      </div>
+
+      <div class="product-card visible" data-brand="home" data-title="Olight" data-price="550,000 MMK" data-desc="Premium Olight illumination tool.">
+        <img src="https://i.ibb.co/W4DN2J08/image.jpg" class="product-img" alt="Olight" onclick="showImage(this.src)">
+        <h4>Olight</h4><p>550,000 MMK</p>
         <button class="view-btn" onclick="openDetails(this.parentElement)">View Details</button>
         <button class="shop-now-btn" onclick="orderProduct(this.parentElement.dataset.title)">Shop Now</button>
       </div>
@@ -196,7 +261,6 @@
       const query = document.getElementById('searchBar').value.toLowerCase().trim(); 
       let count = 0; 
 
-      // If search bar is cleared, reset to ALL tab
       if (query === "") {
         const allTab = document.querySelector('.brand-tab');
         filterBrand('all', allTab);
@@ -206,8 +270,8 @@
       document.querySelectorAll('.brand-tab').forEach(t => t.classList.remove('active')); 
       document.querySelectorAll('.product-card').forEach(card => { 
         const titleMatch = card.dataset.title.toLowerCase().includes(query);
-        const brandMatch = card.dataset.brand.toLowerCase().includes(query);
-        const shouldShow = titleMatch || brandMatch;
+        // We update search to match based on the new category groupings
+        const shouldShow = titleMatch; 
         card.classList.toggle('visible', shouldShow); 
         if (shouldShow) count++; 
       }); 
@@ -241,7 +305,6 @@
 
     function closeModal(id) { 
       document.getElementById(id).classList.remove('show'); 
-      // Check if any other modal is still open before removing modal-open from body
       if (!document.querySelector('.modal.show')) {
         document.body.classList.remove('modal-open'); 
       }
